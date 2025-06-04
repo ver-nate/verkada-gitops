@@ -20,11 +20,14 @@ controls:
   macos_settings:
     custom_settings:
       - path: ../lib/disable-bluetooth-file-sharing.mobileconfig
+      - path: ../lib/macos/configuration-profiles/passcode-settings-ddm.json
   macos_updates:
     deadline: "2025-07-12"
     minimum_version: "15.5.1"
   scripts:
     - path: ../lib/macos/scripts/set-timezone.script.sh
+    - path: ../lib/windows/scripts/set-wallpaper.ps1
+  enable_disk_encryption: true
 team_settings:
   secrets:
     - secret: "$FLEET_ENGINEERING_ENROLL_SECRET"
