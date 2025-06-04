@@ -35,8 +35,10 @@ jobs:
         # Add FLEET_URL and FLEET_API_TOKEN to the repository secrets.
         # In addition, specify or add secrets for all the environment variables that are mentioned in the global/team YAML files.
         env:
-          FLEET_URL: ${{ secrets.FLEET_URL }}
-          FLEET_API_TOKEN: ${{ secrets.FLEET_API_TOKEN }}
-          FLEET_GLOBAL_ENROLL_SECRET: ${{ secrets.FLEET_GLOBAL_ENROLL_SECRET }}
-          FLEET_WORKSTATIONS_ENROLL_SECRET: ${{ secrets.FLEET_WORKSTATIONS_ENROLL_SECRET }}
-          FLEET_WORKSTATIONS_CANARY_ENROLL_SECRET: ${{ secrets.FLEET_WORKSTATIONS_CANARY_ENROLL_SECRET }}
+          FLEET_URL: ${{ secrets.FLEET_URL }} # Fleet url
+          FLEET_API_TOKEN: ${{ secrets.FLEET_API_TOKEN }} # API token from fleet instance
+          FLEET_GLOBAL_ENROLL_SECRET: ${{ secrets.FLEET_GLOBAL_ENROLL_SECRET }} # global enroll secret
+          FLEET_WORKSTATIONS_ENROLL_SECRET: ${{ secrets.FLEET_WORKSTATIONS_ENROLL_SECRET }} # workstations enroll secret
+          FLEET_WORKSTATIONS_CANARY_ENROLL_SECRET: ${{ secrets.FLEET_WORKSTATIONS_CANARY_ENROLL_SECRET }} # canary enroll secret
+          FLEET_ENGINEERING_ENROLL_SECRET: ${{ secrets.FLEET_ENGINEERING_ENROLL_SECRET }} # engineering enroll secret
+          FLEET_NEW_HIRES_ENROLL_SECRET: ${{ secrets.FLEET_NEW_HIRES_ENROLL_SECRET }} # new hire enroll secret 
