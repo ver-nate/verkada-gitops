@@ -10,7 +10,7 @@
 name: Engineering
 policies:
   - path: ../lib/windows/policies/all-windows-updates-installed.policies.yml
-  - path: ../lib/macos/policies/dns-resolvers.policies.yml
+  - path: ../lib/dns-resolvers.policies.yml
 queries:
   - path: ../lib/all/queries/collect-usb-devices.queries.yml
   - path: ../lib/all/queries/collect-failed-login-attempts.queries.yml
