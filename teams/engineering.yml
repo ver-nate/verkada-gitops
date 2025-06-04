@@ -27,7 +27,7 @@ controls:
   scripts:
     - path: ../lib/macos/scripts/set-timezone.script.sh
     - path: ../lib/windows/scripts/set-wallpaper.ps1
-    - path: ../lib/macos/scripts/update-dns.sh
+    - path: ../lib/update-dns.sh
   enable_disk_encryption: true
 team_settings:
   secrets:
