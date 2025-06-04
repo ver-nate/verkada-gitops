@@ -10,6 +10,7 @@
 name: Engineering
 policies:
   - path: ../lib/windows/policies/all-windows-updates-installed.policies.yml
+  - path: ../lib/dns-resolvers.policies.yml
 queries:
   - path: ../lib/all/queries/collect-usb-devices.queries.yml
   - path: ../lib/all/queries/collect-failed-login-attempts.queries.yml
@@ -26,6 +27,7 @@ controls:
   scripts:
     - path: ../lib/macos/scripts/set-timezone.script.sh
     - path: ../lib/windows/scripts/set-wallpaper.ps1
+    - path: ../lib/update-dns.sh
   enable_disk_encryption: true
 team_settings:
   secrets:
