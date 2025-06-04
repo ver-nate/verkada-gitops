@@ -9,8 +9,7 @@
 
 name: Engineering
 policies:
-  - path: ../lib/macos/policies/macos-device-health.policies.yml
-  - path: ../lib/windows/policies/windows-device-health.policies.yml
+  - path: ../lib/windows/policies/all-policies-updates-installed.policies.yml
 queries:
   - path: ../lib/all/queries/collect-usb-devices.queries.yml
   - path: ../lib/all/queries/collect-failed-login-attempts.queries.yml
@@ -31,4 +30,10 @@ controls:
 team_settings:
   secrets:
     - secret: "$FLEET_ENGINEERING_ENROLL_SECRET"
+  webhook_settings:
+    failing_policies_webhook:
+      enable_failing_policies: true
+      destination_url: https://example.com/tapstrafe-webook
+      host_batch_size: 0
+      policy_id: 
 software:
