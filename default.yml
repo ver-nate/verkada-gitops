@@ -19,6 +19,10 @@ org_settings:
     host_expiry_enabled: true
     host_expiry_window: 30
   org_info:
-    org_name: Fleet
+    org_name: Tapstrafe
+  webhook_settings:
+    activities_webhook:
+      enable_activities_webhook: true
+      destination_url: https://example.com
   secrets:
     - secret: "$FLEET_GLOBAL_ENROLL_SECRET"
