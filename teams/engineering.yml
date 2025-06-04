@@ -32,7 +32,7 @@ team_settings:
     - secret: "$FLEET_ENGINEERING_ENROLL_SECRET"
   webhook_settings:
     failing_policies_webhook:
-      enable_failing_policies: true
+      enable_failing_policies_webhook: true
       destination_url: https://example.com/tapstrafe-webook
       host_batch_size: 0
       policy_id: 
