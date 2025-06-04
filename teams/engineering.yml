@@ -40,4 +40,4 @@ team_settings:
       policy_ids: 
 software:
   packages:
-    - path: ../lib/macos/software/zoom.yml
+    - path: ../lib/zoom.yml
